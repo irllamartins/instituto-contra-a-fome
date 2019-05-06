@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Instituto contra fome</title>
+
+    <!-- Principal CSS do Bootstrap -->
+    <link href="https://getbootstrap.com.br/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Estilos customizados para esse template -->
+    <link href="dashboard.css" rel="stylesheet">
+    <script src="index.js" rel="stylesheet"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="comeco.html">Instituto contra fome</a>
+
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="comeco.html">Sair</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <span data-feather="users"></span>
+                                Pagina inicial
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <span data-feather="layers"></span>
+                                Engajamento social
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file"></span>
+                                Doaçoes
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h6
+                        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Relatórios salvos</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                            <span data-feather="plus-circle"></span>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Neste mês
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Último trimestre
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Anual
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+
+            </nav>
+
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Engajamento sociais</h1>
+                </div>
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="logos/logo_amigosdobem.png" alt="Imagem de amigos do bem">
+                        <div class="card-body">
+                            <h5 class="card-title">Amigos do bem</h5>
+                            <p class="card-text">"O meu lema de vida assim descrevo:
+                                se não posso fazer tudo o que devo,
+                                devo, ao menos, fazer tudo o que posso!."
+                            </p>
+                            <button type="button" class="btn btn-outline-secondary btn-sm" onclick="amigosdobem()">Ler mais</button>
+                        </div>
+
+                        <div class="card-footer">
+
+                            <small class="text-muted">Atualizados 3 minutos atrás</small>
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="logos/logo_bancosdealimento.png" alt="Imagem de ONG Banco de Alimento">
+                        <div class="card-body">
+                            <h5 class="card-title">ONG Banco de Alimento</h5>
+                            <p class="card-text">"soma de esforços de cidadãos, empresas e indústrias alimentícias dedicadas a reduzir o desperdício de alimentos e a combater a fome."</p>
+                            <button type="button" class="btn btn-outline-secondary btn-sm" onclick="bancosdealimento()">Ler mais</button>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizados 3 minutos atrás</small>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="logos/logo_oxfam.png" alt="Imagem de capa do oxfam">
+                        <div class="card-body">
+                            <h5 class="card-title">Oxfam</h5>
+                            <p class="card-text">Uma ONG que chegou no Brasil em 1950, trabalham pela redução da pobreza, por justiça e pela democracia, sem fins lucrativos e independente, essa organização está em 94 países e tem 19 afiliadas. </p>
+                            <button type="button" class="btn btn-outline-secondary btn-sm" onclick="oxfam()">Ler mais</button>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizados 3 minutos atrás</small>
+                        </div>
+                    </div>
+                </div>
+                </br>
+                <div class="card-deck">
+                    <div class="card">
+                        <img class="card-img-top" src="logos/logo_cidadania.png" alt="Imagem de Comitê da Cidadania">
+                        <div class="card-body">
+                            <h5 class="card-title">Comitê da Cidadania</h5>
+                            <p class="card-text"> É uma ONG que tem como objetivo a defesa de direitos, e a educação, além de prestar assistência às pessoas que estão em situações precárias.
+                            </p>
+                            <button type="button" class="btn btn-outline-secondary btn-sm" onclick="cidadania()"
+                            >Ler mais</button>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizados 3 minutos atrás</small>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="logos/logo_CSF.png" alt="Imagem de CSF" id="padrao">
+                        <div class="card-body">
+                            <h5 class="card-title">Cidades com fome</h5>
+                            <p class="card-text">Uma organização com objetivo é a integração social de grupos vulneráveis, utilizando a horticultura, que contribui na melhora da alimentação das crianças e dos adultos.</p>
+                            <button type="button" class="btn btn-outline-secondary btn-sm" onclick="csf()">Ler mais</button>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizados 3 minutos atrás</small>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="logos/logo_fao.png" alt="Imagem de FAO" id="padrao">
+                        <div class="card-body">
+                            <h5 class="card-title">Organização das Nações Unidas para a Alimentação e a Agricultura (FAO)</h5>
+                            <p class="card-text">A FAO trabalha no combate à fome e à pobreza, promove o desenvolvimento agrícola, a melhoria da nutrição, a busca da segurança alimentar e o acesso de todas as pessoas, em todos os momentos, aos alimentos necessários para uma vida ativa e saudáve.</p>
+                            <button type="button" class="btn btn-outline-secondary btn-sm" onclick="fao()">Ler mais</button>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Atualizados 3 minutos atrás</small>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </main>
+        </div>
+    </div>
+    <!-- Ícones -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+        feather.replace()
+    </script>
+    <!-- Principal JavaScript do Bootstrap
+    ================================================== -->
+    <!-- Foi colocado no final para a página carregar mais rápido -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="https://getbootstrap.com.br/docs/4.1/assets/js/vendor/jquery-slim.min.js"><\/script>')
+    </script>
+    <script src="https://getbootstrap.com.br/docs/4.1/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com.br/docs/4.1/dist/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>
